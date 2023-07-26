@@ -25,7 +25,6 @@ if choice == "Upload":
     st.title("Upload Your Dataset")
     file = st.file_uploader("Upload Your Dataset")
     if file:
-        data(file)
         df=data(file)
 
 if choice == "Profiling":
