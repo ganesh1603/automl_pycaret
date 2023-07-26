@@ -26,7 +26,7 @@ if choice == "Upload":
     file = st.file_uploader("Upload Your Dataset")
     if file:
         df=data(file)
-
+    df=data(file)
 if choice == "Profiling":
     if df is not None:
         st.title("Exploratory Data Analysis")
