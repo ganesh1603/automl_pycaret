@@ -14,7 +14,7 @@ def data(file):
     df.to_csv('dataset.csv', index=None)
     st.dataframe(df)
     return df
-df=data(file)
+
 
 with st.sidebar:
     st.title("Auto Mashan ML")
@@ -26,7 +26,7 @@ if choice == "Upload":
     file = st.file_uploader("Upload Your Dataset")
     if file:
         data(file)
-        
+        df=data(file)
 
 if choice == "Profiling":
     if df is not None:
