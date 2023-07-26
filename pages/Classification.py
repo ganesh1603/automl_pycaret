@@ -8,14 +8,13 @@ from pycaret.classification import setup, compare_models, pull, save_model, pred
 from streamlit_pandas_profiling import st_profile_report
 
 # Initialize the variable to hold the DataFrame
-df =data(file)
 
 def data(file):
     pd.read_csv(file, index_col=None)
     df.to_csv('dataset.csv', index=None)
     st.dataframe(df)
     return df
-
+df=data(file)
 
 with st.sidebar:
     st.title("Auto Mashan ML")
