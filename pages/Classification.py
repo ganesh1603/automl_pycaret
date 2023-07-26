@@ -18,13 +18,13 @@ def data(file):
 
 with st.sidebar:
     st.title("Auto Mashan ML")
-    choice = st.radio("Navigation", ["Upload", "Profiling", "Modelling", "Prediction", "confusion_matrix", "Download"])
+    choice = st.radio("Navigation", ["Profiling", "Modelling", "Prediction", "confusion_matrix", "Download"])
     st.info("This project application helps you build and explore your data.")
 
-if choice == "Upload":
-    st.title("Upload Your Dataset")
-    file = st.file_uploader("Upload Your Dataset")
-    df=data(file)
+st.title("Upload Your Dataset")
+file = st.file_uploader("Upload Your Dataset")
+df=data(file)
+
 if choice == "Profiling":
     if df is not None:
         st.title("Exploratory Data Analysis")
