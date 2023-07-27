@@ -47,12 +47,6 @@ if choice == "Modelling":
         st.dataframe(compare_df)
         save_model(best_model, 'best_model')
 
-        
-#Prediction
-if choice=="Prediction":
-    pred=predict_model(best_model)
-    st.dataframe(pred)
-
 #Line plot
 if choice=="Line_plot":
     plot=plot_model(best_model, plot = 'line')
