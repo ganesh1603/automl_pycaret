@@ -49,7 +49,7 @@ if choice == "Modelling":
 
 #Line plot
 if choice=="Line_plot":
-    plot=plot_model(best_model, plot = 'line')
+    plot=plot_model(best_model, plot = 'residual')
     st.image(plot)
 
 #Downloading model
