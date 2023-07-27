@@ -41,6 +41,7 @@ if choice == "Modelling":
         compare_df = pull()
         st.dataframe(compare_df)
         save_model(best_model, 'best_model')
+        st.toast("wait till the best model leaderboard appear",icon="😁")
 
 if choice=="Prediction":
     pred=predict_model(best_model)
