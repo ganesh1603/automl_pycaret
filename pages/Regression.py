@@ -1,15 +1,14 @@
 import streamlit as st
 import pycaret as py
 import pandas as pd
-from operator import index
 import streamlit as st
 import plotly.express as px
 from pycaret.regression import setup, compare_models, pull, save_model,predict_model
-from pycaret.classification import *
-import pandas_profiling
-import pandas as pd
 from streamlit_pandas_profiling import st_profile_report
 import os 
+
+if os.path.exists('./dataset.csv'): 
+    df = pd.read_csv('dataset.csv', index_col=None)
 
 
 #SIDEBAR
