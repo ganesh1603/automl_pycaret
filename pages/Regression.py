@@ -42,6 +42,7 @@ if choice == "Modelling":
         setup(df, target=chosen_target)
         setup_df = pull()
         st.dataframe(setup_df)
+        st.toast("wait till the best model leaderboard appear",icon="😁")
         best_model = compare_models()
         compare_df = pull()
         st.dataframe(compare_df)
