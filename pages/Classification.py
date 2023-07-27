@@ -42,11 +42,6 @@ if choice == "Modelling":
         compare_df = pull()
         st.dataframe(compare_df)
         save_model(best_model, 'best_model')
-        
-
-if choice=="Prediction":
-    pred=predict_model(best_model)
-    st.dataframe(pred)
 
 if choice=="confusion_matrix":
     plot=plot_model(best_model, plot = 'confusion_matrix')
