@@ -15,7 +15,7 @@ if os.path.exists('./dataset.csv'):
 with st.sidebar: 
 
     st.title("Auto Mashan ML")
-    choice = st.radio("Navigation", ["Upload","Profiling","Modelling","Prediction","confusion_matrix","Download"])
+    choice = st.radio("Navigation", ["Upload","Profiling","Modelling","confusion_matrix","Download"])
     st.info("This project application helps you build and explore your data.")
 
 if choice == "Upload":
