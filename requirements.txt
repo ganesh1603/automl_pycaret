@@ -1,7 +1,8 @@
 streamlit
-pycaret
 pandas
+pycaret
+pandas-profiling[notebook]
 plotly
-streamlit-pandas-profiling 
-pandas-profiling
-numpy
+openpyxl
+xlrd
+streamlit-pandas-profiling
